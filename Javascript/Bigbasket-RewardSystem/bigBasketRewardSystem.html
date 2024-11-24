@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Basket Reward Points</title>
+    <!-- <script src="bigBasketRewardSystem.js" defer></script> -->
+    <style>
+        body{font-family:sans-serif;height:100%;}
+        h1{
+            font-size:3rem;
+            text-align: center;
+        }
+        #txtUsername{font-style: italic;}
+    </style>
+</head>
+<body>
+     
+    <h1>Big Basket</h1>
+    <hr/>
+    <p id="txtUsername"></p>
+            <p id="txtBonusPoint"></p>
+            <p id="txtRewardMessage"></p>
+    <script>
+         
+let username = "";
+let BonusPoint = "";
+setTimeout(function(){
+    username = prompt("please enter your name:");
+    BonusPoint = prompt("Please enter your bonus points:");
+},5000)
+
+
+
+
+debugger;
+if((BonusPoint !="") || (BonusPoint != null))
+{
+    document.getElementById("txtUsername").textContent = `Welcome ${username}`;
+    document.getElementById("txtBonusPoint").textContent = `Your bonus point is ${BonusPoint}`;
+    CalculateRewardPoint(BonusPoint);
+}
+else{
+    document.getElementById("txtRewardMessage").textContent ="Please enter your bonus point";
+}
+function CalculateRewardPoint(BonusPoint){
+    
+    let messageText = "You have won a gift voucher of";
+
+    if(BonusPoint < 200){
+        console.log(BonusPoint);
+        document.getElementById("txtRewardMessage").textContent ="Thank you visit again";
+    }
+    else if((BonusPoint > 200) && (BonusPoint <=500)){
+        document.getElementById("txtRewardMessage").textContent = `${messageText} ${Math.ceil(BonusPoint * 0.20)}`
+    }
+    else if((BonusPoint > 500) && (BonusPoint <=1000)){
+        document.getElementById("txtRewardMessage").textContent = `${messageText} ${Math.ceil(BonusPoint * 0.15)}`
+    }
+    else if((BonusPoint > 1000) && (BonusPoint <= 2500)){
+        document.getElementById("txtRewardMessage").textContent = `${messageText} ${Math.ceil(BonusPoint * 0.12)}`
+    }
+    else if((BonusPoint > 2500) && (BonusPoint <= 5000)){
+        document.getElementById("txtRewardMessage").textContent = `${messageText} ${Math.ceil(BonusPoint * 0.10)}`
+    }
+    else{
+        document.getElementById("txtRewardMessage").textContent = `${messageText} ${Math.ceil(BonusPoint * 0.05)}`
+    }
+}
+console.log(BonusPoint);
+    </script>
+</body>
+</html>
