@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entri News</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand font-weight-bold" href="#">ENTRI <span class="bold text-info">NEWS</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="SignIn.html">Sign In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="SignUp.html">Sign Up</a>
+                  </li>
+                  
+                </ul>
+                 
+              </div>
+            </div>
+          </nav>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="d-flex  justify-content-center"><i class="bi bi-envelope" style="font-size: 5rem;"></i></p>
+                    <h1 class="d-flex  justify-content-center display-6 font-weight-bold"><span class="text-dark pe-4">THE </span>  ENTRI <span class="text-info pe-4">NEWS</span> Newsletter</h1>
+                    <p class="d-flex  justify-content-center "><small>A newsletter by The ENTRI NEWS Blog</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-4 pt-4">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6  offset-lg-2">
+                    <div class="mb-3">
+                        <!--     -->
+                        <input type="email" autocomplete="off" required class="form-control" id="txtemail" placeholder="Enter your email ID">
+                        <div class="invalid-feedback">
+                          Please enter the email.
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <button type="button" class="btn btn-outline-dark" onclick="fnvalidate()"><i class="bi bi-envelope-plus"></i> Get this newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>   
+        <div class="container mt-4 pt-4">
+            <div class="row">   
+                <div class="col text-justify m-auto">
+                    <p class="m-0 text-usernotes"><small>By signing up, you will create a ENTRI account if you don’t already have one. Review our Privacy Policy for more information</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

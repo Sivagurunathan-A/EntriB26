@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Inter;
+    src: url('/fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+    font-family: Inter-bold;
+    src: url('/fonts/Inter_28pt-Bold.ttf');
+}
+body{
+    font-family: Inter, sans-serif;
+}
+.bold,.font-weight-bold{
+    font-family: Inter-bold,sans-serif;
+    font-weight: bold;
+}
+ .text-usernotes{
+    font-size: 12px;
+    
+    margin:10px 0px 0px;
+    text-align: center;
+}
